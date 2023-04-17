@@ -1,0 +1,86 @@
+* , *::before , *::after{
+	box-sizing: border-box;
+	font-family: Gotham Rounded;
+	font-weight: normal;
+}
+#computer-grid{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	
+}
+.buttons{
+	
+	
+		display: grid;
+		justify-content: center;
+		align-content: center;
+		min-height: 400px;
+		min-width: 392.73px;
+		background-color: bisque;
+		grid-template-columns: repeat(4, 100px);
+		grid-template-rows: minmax repeat(10px, auto) repeat(5, 100px);
+		border: 4px solid white;
+		
+	
+
+}
+.buttons > button{
+	background-color: black;
+	cursor: pointer;
+	color: white;
+	min-width: 4rem;
+	min-height: 5rem;
+	border: 1px solid wheat;
+	font-size: 45px;
+	
+}
+.buttons > button:hover{
+	background-color: aquamarine;
+	color: black;
+	transition-timing-function: ease-in-out;
+	transition: 0.2s;
+}
+#equal:hover{
+	background-color: rgba(163, 27, 173, 0.564);
+	transition-timing-function: ease-in-out;
+	transition: 0.4s;
+}
+#all-clear:hover{
+	background-color: rgb(185, 35, 35);
+	color: rgb(108, 27, 27);
+	transition-timing-function: ease-in-out;
+	transition: 0.4s;
+}
+#op:hover{
+	background-color: rgb(86, 92, 176);
+	transition-timing-function: ease-in-out;
+	transition: 0.4s;
+}
+.span-two{
+	grid-column: span 2;
+	column-span: 2;
+}
+#delete:hover{
+	background-color: rgb(255, 255, 255);
+	color: black;
+	transition-timing-function: ease-in-out;
+	transition: 0.4s;
+}
+#display{
+	grid-column: 1/-1;
+	font-size: 50px;
+	background-color: darkcyan;
+	display: flex;
+	min-height: 100px;
+	min-width: 400px;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 10px;
+	/* flex-wrap: wrap; */
+	word-wrap: break-word;
+	word-break: break-all;
+	border: 4px solid white;
+}
